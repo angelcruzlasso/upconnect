@@ -1,0 +1,10 @@
+# Ignorar archivos compilados de Python
+# Ignorar archivos de bases de datos
+# Ignorar archivos generados por __pycache__
+# Ignorar el .venv
+# Ignorar el directorio .web
+*.db
+*.py[cod]
+.venv/
+.web
+__pycache__/
