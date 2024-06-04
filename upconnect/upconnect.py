@@ -13,6 +13,7 @@ def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
         rx.color_mode.button(position="top-right"),
+        #! Aqui empieza el vstack
         rx.vstack(
             rx.heading("Hola mundo cruel to Reflex!", size="9"),
             rx.text(
@@ -28,7 +29,7 @@ def index() -> rx.Component:
             spacing="5",
             justify="center",
             min_height="85vh",
-        ),
+        ),#! Aqui termina el vstack
         rx.logo(),
     )
 
