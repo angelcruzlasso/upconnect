@@ -18,7 +18,7 @@
 Entre los colaboradores del proyecto son:
 
 1. Angel Cruz Lasso (**integrante de OKinawa Estudio Developer Team**).
-2. Jean Guillen Montilla
+2. Jean Guillen (**lider de Cyber-Developers team**)
 3. Ariel Rodrigues
 4. Kevin Gatica
 5. Edwin Villarreal
