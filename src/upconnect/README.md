@@ -41,9 +41,9 @@
 
     ```bash
     # Creacion del archivo oculto venv
-    angelcl@archlinux:/upconnect/src/upconnect$ python venv -m .venv
+    angelcl@archlinux:/upconnect/src/upconnect$ python -m venv .venv
     # Si esta en ubuntu
-    angelcl@ubuntu:/upconnect/src/upconnect$ python3 venv -m .venv
+    angelcl@ubuntu:/upconnect/src/upconnect$ python3 -m venv .venv
     ```
 
     Procedemos a activar el entorno virtual
