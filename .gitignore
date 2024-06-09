@@ -5,6 +5,6 @@
 # Ignorar el directorio .web
 *.db
 *.py[cod]
-.venv/
+.venv
 .web
 __pycache__/
