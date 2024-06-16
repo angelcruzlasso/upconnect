@@ -50,14 +50,16 @@
 
     ```bash
     # Activacion del entorno virtual (lo mismo para ubuntu)
-    angelcl@archlinux:/upconnect/src/upconnect$ source .venv/bin/activate
+    # angelcl@archlinux:/upconnect/src/upconnect$
+    source .venv/bin/activate
     ```
 
 3. **Instalacion de los paquetes** para instalar los paquetes nesesarios para el proyecto, esto se logra por el archivo requirements.txt
 
    ```bash
    # instalacion de paquetes como reflex...
-   angelcl@archlinux:/upconnect/src/upconnect$ python install -r requirements.txt
+   # angelcl@archlinux:/upconnect/src/upconnect$
+   pip install -r requirements.txt
    ```
 
 4. **Arrancar reflex**, una vez instalado reflex un requisito para inicializar  reflex es tener **unzip** que descomprimira archivos comprimidos durante la inicializacion si instala con el siguiente comando.
@@ -66,7 +68,7 @@
     # Si esta en archlinux
     sudo pacman -S unzip
     # Si esta en ubuntu
-    sudo apt -S unzip
+    sudo apt install unzip
     ```
 
     Luego, podemos seguir con lo siguiente:
