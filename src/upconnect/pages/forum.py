@@ -356,7 +356,7 @@ def pagina_principal() -> rx.Component:
             sidebar_bottom_profile(),
             tab_component(),
             editor_example(),
-            padding_top="4em", 
+            padding_top="4em",
             padding_left=["0", "20em"],
             height="100vh",
             width="100%",
@@ -364,6 +364,3 @@ def pagina_principal() -> rx.Component:
             align="start",
         ),
     )
-
-app = rx.App()
-app.add_page(pagina_principal, route="/")
