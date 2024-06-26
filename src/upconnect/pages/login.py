@@ -1,5 +1,4 @@
 import reflex as rx
-import re
 
 # Definición de la clase RadixFormState para manejar el estado del formulario
 class RadixFormState(rx.State):
