@@ -19,6 +19,3 @@ app.add_page(index)
 # Configuración de la aplicación y rutas
 app.add_page(login, "/")
 app.add_page(register_page, "/register")
-
-
-
