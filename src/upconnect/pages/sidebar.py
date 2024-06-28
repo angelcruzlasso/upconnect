@@ -81,35 +81,53 @@ def sidebar_items() -> rx.Component:
         {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
         {"text": "CHISME/MEMES DE INFORMÁTICA", "href": "/#MEMES DE PROGRAMACIÓN"},
     ]
-    ing_informatica_item = sidebar_menu_item("ING. EN INFORMÁTICA", "layout-dashboard", ing_informatica_options)
+    ing_informatica_item = sidebar_menu_item("ING. EN INFORMÁTICA", "laptop", ing_informatica_options)
 
     ing_electronica_options = [
         {"text": "PROYECTOS DE ELECTRÓNICA", "href": "/#PROYECTOS"},
         {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
         {"text": "NOTICIAS/MEMES DE ELECTRÓNICA", "href": "/#MEMES DE ELECTRÓNICA"},
     ]
-    ing_electronica_item = sidebar_menu_item("ING. EN ELECTRÓNICA", "square-library", ing_electronica_options)
+    ing_electronica_item = sidebar_menu_item("ING. EN ELECTRÓNICA", "circuit-board", ing_electronica_options)
 
     ing_mecatronica_options = [
         {"text": "PROYECTOS DE MECATRÓNICA", "href": "/#PROYECTOS"},
         {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
         {"text": "NOTICIAS/MEMES DE MECATRÓNICA", "href": "/#MEMES DE MECATRÓNICA"},
     ]
-    ing_mecatronica_item = sidebar_menu_item("ING. EN MECATRÓNICA", "bar-chart-4", ing_mecatronica_options)
+    ing_mecatronica_item = sidebar_menu_item("ING. EN MECATRÓNICA", "bot", ing_mecatronica_options)
 
     lic_informatica_aplicada_options = [
         {"text": "PROYECTOS DE INFORMÁTICA APLICADA", "href": "/#PROYECTOS"},
         {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
         {"text": "NOTICIAS/MEMES DE INFORMÁTICA APLICADA", "href": "/#MEMES DE INFORMÁTICA APLICADA"},
     ]
-    lic_informatica_aplicada_item = sidebar_menu_item("LIC. EN INFO. APLICADA", "layout-dashboard", lic_informatica_aplicada_options)
+    lic_informatica_aplicada_item = sidebar_menu_item("LIC. EN INFO. APLICADA", "book", lic_informatica_aplicada_options)
 
     lic_gerencia_comercio_elec_options = [
         {"text": "PROYECTOS DE COMERCIO ELECTRÓNICO", "href": "/#PROYECTOS"},
         {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
         {"text": "NOTICIAS/MEMES DE COMERCIO ELECTRÓNICO", "href": "/#MEMES DE COMERCIO ELECTRÓNICO"},
     ]
-    lic_gerencia_comercio_elec_item = sidebar_menu_item("LIC. EN GER. COMERCIO ELEC.", "square-library", lic_gerencia_comercio_elec_options)
+    lic_gerencia_comercio_elec_item = sidebar_menu_item("LIC. EN GER. COMERCIO ELEC.", "candlestick-chart", lic_gerencia_comercio_elec_options)
+
+    lic_en_Ciencia_de_datos_options = [
+        {"text": "PROYECTOS DE CIENCIA DE DATOS", "href": "/#PROYECTOS"},
+        {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
+        {"text": "NOTICIAS/MEMES DE CIENCIA DE DATOS", "href": "/#MEMES DE COMERCIO ELECTRÓNICO"},
+
+    ]
+
+    lic_en_ciencia_de_datos_item = sidebar_menu_item("LIC. EN CIENCIA DE DATOS", "database",lic_en_Ciencia_de_datos_options)
+
+    lic_en_seg_informatica_options = [
+        {"text": "PROYECTOS DE SEGURIDAD INFORMÁTICA", "href": "/#PROYECTOS"},
+        {"text": "MATERIAS DE SEMESTRE", "href": "/#SEMESTRES"},
+        {"text": "NOTICIAS/MEMES DE SEGURIDAD INFORMÁTICA", "href": "/#MEMES DE COMERCIO ELECTRÓNICO"},
+
+    ]
+
+    lic_en_seg_informatica_item = sidebar_menu_item("TEC. EN SEGURIDAD INFORMÁTICA", "qr-code",lic_en_seg_informatica_options)
 
     return rx.vstack(
         ing_informatica_item,
@@ -117,6 +135,8 @@ def sidebar_items() -> rx.Component:
         ing_mecatronica_item,
         lic_informatica_aplicada_item,
         lic_gerencia_comercio_elec_item,
+        lic_en_ciencia_de_datos_item,
+        lic_en_seg_informatica_item,
         spacing="6",
         width="100%",
     )
