@@ -1,5 +1,4 @@
 import reflex as rx
-from rxconfig import config
 from .editor import editor_example
 from .sidebar import sidebar_bottom_profile
 from .navbar import navbar_searchbar

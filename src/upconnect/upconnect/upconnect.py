@@ -1,7 +1,7 @@
 import reflex as rx
 from rxconfig import config
-from pages.login import register_page
-from pages.login import login
+from upconnect.pages.login_register import register_page
+from upconnect.pages.login_register import login
 from pages.forum import pagina_principal
 
 class State(rx.State):
@@ -20,7 +20,7 @@ def index() -> rx.Component:
 app = rx.App()
 # paginas
 app.add_page(index)
-app.add_page(login, "/")
-app.add_page(register_page, "/register")
 app.add_page(index, route="/")
+app.add_page(login, "/login")
+app.add_page(register_page, "/register")
 app.add_page(pagina_principal, route="/pagina_principal")
