@@ -24,3 +24,4 @@ app.add_page(index, route="/")
 app.add_page(login, "/login")
 app.add_page(register_page, "/register")
 app.add_page(pagina_principal, route="/pagina_principal")
+
