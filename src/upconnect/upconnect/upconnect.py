@@ -1,7 +1,7 @@
 import reflex as rx
 from rxconfig import config
-from upconnect.pages.login_register import register_page
-from upconnect.pages.login_register import login
+from pages.login import login
+from pages.register import register_page
 from pages.forum import pagina_principal
 
 class State(rx.State):
@@ -10,11 +10,8 @@ class State(rx.State):
 
 def index() -> rx.Component:
     return rx.container(
-        rx.color_mode.button(position="top-right"),
-        rx.vstack(
-            rx.text("klk mi loco bienvenido seas al lado oscuro del mundo"),
-            rx.button("Pulse aqui pa irte pa allá xd", on_click=lambda: rx.redirect("/pagina_principal")),
-        ),
+        login(),
+        #rx.button("Pulse aqui pa irte pa allá xd", on_click=lambda: rx.redirect("/pagina_principal")),
     )
 
 app = rx.App()
